@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Маме с любовью</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <audio id="bg-music" loop>
+    <source src="music.mp3" type="audio/mpeg" />
+  </audio>
+
+  <div class="hearts"></div>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="#" data-section="home" class="active">Главная</a></li>
+      <li><a href="#" data-section="photos">Фото</a></li>
+      <li><a href="#" data-section="message">Слова</a></li>
+    </ul>
+    <button id="music-toggle">Музыка: Вкл</button>
+  </nav>
+
+  <main>
+    <section id="home" class="section active fade-in">
+      <header>
+        <h1>Мама, ты самая лучшая!</h1>
+        <p>Этот сайт — мой подарок тебе!</p>
+      </header>
+    </section>
+
+    <section id="photos" class="section fade-in-up">
+      <h2>Наши фото</h2>
+      <div class="gallery">
+        <div class="photo-card">
+          <img src="mama.jpg" alt="Мама" />
+          <p>Моя любимая мама</p>
+        </div>
+        <div class="photo-card">
+          <img src="my_photo.jpg" alt="Я и мама" />
+          <p>Я и ты вместе</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="message" class="section fade-in-up">
+      <h2>Добрые слова</h2>
+      <p class="message">
+        Спасибо тебе за любовь, тепло и поддержку. Ты — свет в моей жизни. Я всегда рядом!
+      </p>
+      <button class="love-button">Я тебя люблю</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
